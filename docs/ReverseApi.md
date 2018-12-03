@@ -24,10 +24,10 @@ Reverse geocoding is the process of converting a coordinate or location (latitud
 val apiInstance = ReverseApi()
 val lat : java.math.BigDecimal = 17.24 // java.math.BigDecimal | Latitude of the location to generate an address for.
 val lon : java.math.BigDecimal = 74.25 // java.math.BigDecimal | Longitude of the location to generate an address for.
-val format : kotlin.String = json // kotlin.String | Format to geocode. Only JSON supported for SDKs
+val format : kotlin.String = "json" // kotlin.String | Format to geocode. Only JSON supported for SDKs
 val normalizecity : kotlin.Int = 1 // kotlin.Int | Normalizes village to city level data to city
 val addressdetails : kotlin.Int = 1 // kotlin.Int | Include a breakdown of the address into elements. Defaults to 1.
-val acceptLanguage : kotlin.String = en // kotlin.String | Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language=native
+val acceptLanguage : kotlin.String = "en" // kotlin.String | Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language=native
 val namedetails : kotlin.Int = 0 // kotlin.Int | Include a list of alternative names in the results. These may include language variants, references, operator and brand.
 val extratags : kotlin.Int = 0 // kotlin.Int | Include additional information in the result if available, e.g. wikipedia link, opening hours.
 try {
