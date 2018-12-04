@@ -29,12 +29,13 @@ class ReverseApi(basePath: kotlin.String = "https://eu1.locationiq.com/v1") : Ap
     * @param acceptLanguage Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language&#x3D;native (optional)
     * @param namedetails Include a list of alternative names in the results. These may include language variants, references, operator and brand. (optional)
     * @param extratags Include additional information in the result if available, e.g. wikipedia link, opening hours. (optional)
+    * @param statecode Adds state or province code when available to the statecode key inside the address element. Currently supported for addresses in the USA, Canada and Australia. Defaults to 0 (optional)
     * @return Location
     */
     @Suppress("UNCHECKED_CAST")
-    fun reverse(lat: java.math.BigDecimal, lon: java.math.BigDecimal, format: kotlin.String, normalizecity: kotlin.Int, addressdetails: kotlin.Int, acceptLanguage: kotlin.String, namedetails: kotlin.Int, extratags: kotlin.Int) : Location {
+    fun reverse(lat: java.math.BigDecimal, lon: java.math.BigDecimal, format: kotlin.String, normalizecity: kotlin.Int, addressdetails: kotlin.Int, acceptLanguage: kotlin.String, namedetails: kotlin.Int, extratags: kotlin.Int, statecode: kotlin.Int) : Location {
         val localVariableBody: kotlin.Any? = null
-        val localVariableQuery: MultiValueMap = mapOf("lat" to listOf("$lat"), "lon" to listOf("$lon"), "format" to listOf("$format"), "normalizecity" to listOf("$normalizecity"), "addressdetails" to listOf("$addressdetails"), "accept-language" to listOf("$acceptLanguage"), "namedetails" to listOf("$namedetails"), "extratags" to listOf("$extratags"))
+        val localVariableQuery: MultiValueMap = mapOf("lat" to listOf("$lat"), "lon" to listOf("$lon"), "format" to listOf("$format"), "normalizecity" to listOf("$normalizecity"), "addressdetails" to listOf("$addressdetails"), "accept-language" to listOf("$acceptLanguage"), "namedetails" to listOf("$namedetails"), "extratags" to listOf("$extratags"), "statecode" to listOf("$statecode"))
         val localVariableHeaders: kotlin.collections.Map<kotlin.String,kotlin.String> = mapOf()
         val localVariableConfig = RequestConfig(
             RequestMethod.GET,

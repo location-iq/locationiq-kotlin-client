@@ -17,25 +17,45 @@ package locationiq.models
  * @param houseNumber 
  * @param road 
  * @param residential 
+ * @param borough 
+ * @param neighbourhood 
+ * @param quarter 
+ * @param hamlet 
+ * @param suburb 
+ * @param island 
  * @param village 
+ * @param town 
+ * @param city 
+ * @param cityDistrict 
  * @param county 
  * @param state 
+ * @param stateDistrict 
  * @param postcode 
  * @param country 
  * @param countryCode 
- * @param city 
+ * @param stateCode 
  */
 data class Address (
     val houseNumber: kotlin.String? = null,
     val road: kotlin.String? = null,
     val residential: kotlin.String? = null,
+    val borough: kotlin.String? = null,
+    val neighbourhood: kotlin.String? = null,
+    val quarter: kotlin.String? = null,
+    val hamlet: kotlin.String? = null,
+    val suburb: kotlin.String? = null,
+    val island: kotlin.String? = null,
     val village: kotlin.String? = null,
+    val town: kotlin.String? = null,
+    val city: kotlin.String? = null,
+    val cityDistrict: kotlin.String? = null,
     val county: kotlin.String? = null,
     val state: kotlin.String? = null,
+    val stateDistrict: kotlin.String? = null,
     val postcode: kotlin.String? = null,
     val country: kotlin.String? = null,
     val countryCode: kotlin.String? = null,
-    val city: kotlin.String? = null
+    val stateCode: kotlin.String? = null
 ) {
 
 }

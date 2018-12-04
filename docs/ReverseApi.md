@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="reverse"></a>
 # **reverse**
-> Location reverse(lat, lon, format, normalizecity, addressdetails, acceptLanguage, namedetails, extratags)
+> Location reverse(lat, lon, format, normalizecity, addressdetails, acceptLanguage, namedetails, extratags, statecode)
 
 Reverse Geocoding
 
@@ -30,8 +30,9 @@ val addressdetails : kotlin.Int = 1 // kotlin.Int | Include a breakdown of the a
 val acceptLanguage : kotlin.String = "en" // kotlin.String | Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language=native
 val namedetails : kotlin.Int = 0 // kotlin.Int | Include a list of alternative names in the results. These may include language variants, references, operator and brand.
 val extratags : kotlin.Int = 0 // kotlin.Int | Include additional information in the result if available, e.g. wikipedia link, opening hours.
+val statecode : kotlin.Int = 0 // kotlin.Int | Adds state or province code when available to the statecode key inside the address element. Currently supported for addresses in the USA, Canada and Australia. Defaults to 0
 try {
-    val result : Location = apiInstance.reverse(lat, lon, format, normalizecity, addressdetails, acceptLanguage, namedetails, extratags)
+    val result : Location = apiInstance.reverse(lat, lon, format, normalizecity, addressdetails, acceptLanguage, namedetails, extratags, statecode)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ReverseApi#reverse")
@@ -54,6 +55,7 @@ Name | Type | Description  | Notes
  **acceptLanguage** | **kotlin.String**| Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language&#x3D;native | [optional]
  **namedetails** | **kotlin.Int**| Include a list of alternative names in the results. These may include language variants, references, operator and brand. | [optional] [enum: 0, 1]
  **extratags** | **kotlin.Int**| Include additional information in the result if available, e.g. wikipedia link, opening hours. | [optional] [enum: 0, 1]
+ **statecode** | **kotlin.Int**| Adds state or province code when available to the statecode key inside the address element. Currently supported for addresses in the USA, Canada and Australia. Defaults to 0 | [optional] [enum: 0, 1]
 
 ### Return type
 

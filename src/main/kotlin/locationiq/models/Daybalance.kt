@@ -15,9 +15,11 @@ package locationiq.models
 /**
  * 
  * @param day 
+ * @param bonus 
  */
 data class Daybalance (
-    val day: kotlin.Int? = null
+    val day: kotlin.Int? = null,
+    val bonus: kotlin.Int? = null
 ) {
 
 }
