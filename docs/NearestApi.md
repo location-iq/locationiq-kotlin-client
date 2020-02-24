@@ -18,8 +18,8 @@ Snaps a coordinate to the street network and returns the nearest n matches. Wher
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import locationiq.infrastructure.*
+//import locationiq.models.*
 
 val apiInstance = NearestApi()
 val coordinates : kotlin.String = "-0.16102,51.523854" // kotlin.String | String of format {longitude},{latitude};{longitude},{latitude}[;{longitude},{latitude} ...] or polyline({polyline}) or polyline6({polyline6}). polyline follows Google's polyline format with precision 5

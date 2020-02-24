@@ -1,4 +1,4 @@
-# org.openapitools.client - Kotlin client library for LocationIQ
+# locationiq - Kotlin client library for LocationIQ
 
 ## Requires
 
@@ -48,20 +48,20 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [org.openapitools.client.models.Address](docs/Address.md)
- - [org.openapitools.client.models.Balance](docs/Balance.md)
- - [org.openapitools.client.models.Daybalance](docs/Daybalance.md)
- - [org.openapitools.client.models.DirectionsDirectionsRoutes](docs/DirectionsDirectionsRoutes.md)
- - [org.openapitools.client.models.DirectionsMatrixSources](docs/DirectionsMatrixSources.md)
- - [org.openapitools.client.models.DirectionsMinusDirections](docs/DirectionsMinusDirections.md)
- - [org.openapitools.client.models.DirectionsMinusMatching](docs/DirectionsMinusMatching.md)
- - [org.openapitools.client.models.DirectionsMinusMatrix](docs/DirectionsMinusMatrix.md)
- - [org.openapitools.client.models.DirectionsMinusNearest](docs/DirectionsMinusNearest.md)
- - [org.openapitools.client.models.DirectionsNearestWaypoints](docs/DirectionsNearestWaypoints.md)
- - [org.openapitools.client.models.Error](docs/Error.md)
- - [org.openapitools.client.models.Location](docs/Location.md)
- - [org.openapitools.client.models.Matchquality](docs/Matchquality.md)
- - [org.openapitools.client.models.Namedetails](docs/Namedetails.md)
+ - [locationiq.models.Address](docs/Address.md)
+ - [locationiq.models.Balance](docs/Balance.md)
+ - [locationiq.models.Daybalance](docs/Daybalance.md)
+ - [locationiq.models.DirectionsDirectionsRoutes](docs/DirectionsDirectionsRoutes.md)
+ - [locationiq.models.DirectionsMatrixSources](docs/DirectionsMatrixSources.md)
+ - [locationiq.models.DirectionsMinusDirections](docs/DirectionsMinusDirections.md)
+ - [locationiq.models.DirectionsMinusMatching](docs/DirectionsMinusMatching.md)
+ - [locationiq.models.DirectionsMinusMatrix](docs/DirectionsMinusMatrix.md)
+ - [locationiq.models.DirectionsMinusNearest](docs/DirectionsMinusNearest.md)
+ - [locationiq.models.DirectionsNearestWaypoints](docs/DirectionsNearestWaypoints.md)
+ - [locationiq.models.Error](docs/Error.md)
+ - [locationiq.models.Location](docs/Location.md)
+ - [locationiq.models.Matchquality](docs/Matchquality.md)
+ - [locationiq.models.Namedetails](docs/Namedetails.md)
 
 
 <a name="documentation-for-authorization"></a>

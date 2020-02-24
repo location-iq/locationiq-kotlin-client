@@ -18,8 +18,8 @@ The Balance API provides a count of request credits left in the user&#39;s accou
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import locationiq.infrastructure.*
+//import locationiq.models.*
 
 val apiInstance = BalanceApi()
 try {

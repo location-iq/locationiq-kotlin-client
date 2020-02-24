@@ -18,8 +18,8 @@ The Autocomplete API is a variant of the Search API that returns place predictio
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import locationiq.infrastructure.*
+//import locationiq.models.*
 
 val apiInstance = AutocompleteApi()
 val q : kotlin.String = "Empire state" // kotlin.String | Address to geocode

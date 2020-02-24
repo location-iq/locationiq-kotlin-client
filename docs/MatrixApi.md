@@ -18,8 +18,8 @@ Computes duration of the fastest route between all pairs of supplied coordinates
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import locationiq.infrastructure.*
+//import locationiq.models.*
 
 val apiInstance = MatrixApi()
 val coordinates : kotlin.String = "-0.16102,51.523854;-0.15797,51.52326;-0.161593,51.522550" // kotlin.String | String of format {longitude},{latitude};{longitude},{latitude}[;{longitude},{latitude} ...] or polyline({polyline}) or polyline6({polyline6}). polyline follows Google's polyline format with precision 5

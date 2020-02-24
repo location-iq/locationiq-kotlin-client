@@ -18,8 +18,8 @@ The Search API allows converting addresses, such as a street address, into geogr
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import locationiq.infrastructure.*
+//import locationiq.models.*
 
 val apiInstance = SearchApi()
 val q : kotlin.String = "Empire state building" // kotlin.String | Address to geocode

@@ -18,8 +18,8 @@ Reverse geocoding is the process of converting a coordinate or location (latitud
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import locationiq.infrastructure.*
+//import locationiq.models.*
 
 val apiInstance = ReverseApi()
 val lat : java.math.BigDecimal = 40.7487727 // java.math.BigDecimal | Latitude of the location to generate an address for.
