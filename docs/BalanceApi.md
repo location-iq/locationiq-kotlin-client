@@ -43,7 +43,10 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[key](../README.md#key)
+
+Configure key:
+    ApiClient.apiKey["key"] = ""
+    ApiClient.apiKeyPrefix["key"] = ""
 
 ### HTTP request headers
 

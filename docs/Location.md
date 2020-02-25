@@ -4,6 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**distance** | [**java.math.BigDecimal**](java.math.BigDecimal.md) |  |  [optional]
 **placeId** | **kotlin.String** |  |  [optional]
 **licence** | **kotlin.String** |  |  [optional]
 **osmType** | **kotlin.String** |  |  [optional]
@@ -17,6 +18,7 @@ Name | Type | Description | Notes
 **importance** | [**java.math.BigDecimal**](java.math.BigDecimal.md) |  |  [optional]
 **address** | [**Address**](Address.md) |  |  [optional]
 **namedetails** | [**Namedetails**](Namedetails.md) |  |  [optional]
+**matchquality** | [**Matchquality**](Matchquality.md) |  |  [optional]
 
 
 

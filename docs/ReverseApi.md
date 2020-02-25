@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="reverse"></a>
 # **reverse**
-> Location reverse(lat, lon, format, normalizecity, addressdetails, acceptLanguage, namedetails, extratags, statecode)
+> Location reverse(lat, lon, format, normalizecity, addressdetails, acceptMinusLanguage, namedetails, extratags, statecode, showdistance, postaladdress)
 
 Reverse Geocoding
 
@@ -22,17 +22,19 @@ Reverse geocoding is the process of converting a coordinate or location (latitud
 //import locationiq.models.*
 
 val apiInstance = ReverseApi()
-val lat : java.math.BigDecimal = 17.24 // java.math.BigDecimal | Latitude of the location to generate an address for.
-val lon : java.math.BigDecimal = 74.25 // java.math.BigDecimal | Longitude of the location to generate an address for.
+val lat : java.math.BigDecimal = 40.7487727 // java.math.BigDecimal | Latitude of the location to generate an address for.
+val lon : java.math.BigDecimal = -73.9849336 // java.math.BigDecimal | Longitude of the location to generate an address for.
 val format : kotlin.String = "json" // kotlin.String | Format to geocode. Only JSON supported for SDKs
 val normalizecity : kotlin.Int = 1 // kotlin.Int | Normalizes village to city level data to city
 val addressdetails : kotlin.Int = 1 // kotlin.Int | Include a breakdown of the address into elements. Defaults to 1.
-val acceptLanguage : kotlin.String = "en" // kotlin.String | Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language=native
+val acceptMinusLanguage : kotlin.String = "en" // kotlin.String | Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language=native
 val namedetails : kotlin.Int = 0 // kotlin.Int | Include a list of alternative names in the results. These may include language variants, references, operator and brand.
 val extratags : kotlin.Int = 0 // kotlin.Int | Include additional information in the result if available, e.g. wikipedia link, opening hours.
 val statecode : kotlin.Int = 0 // kotlin.Int | Adds state or province code when available to the statecode key inside the address element. Currently supported for addresses in the USA, Canada and Australia. Defaults to 0
+val showdistance : kotlin.Int = 0 // kotlin.Int | Returns the straight line distance (meters) between the input location and the result's location. Value is set in the distance key of the response. Defaults to 0 [0,1]
+val postaladdress : kotlin.Int = 0 // kotlin.Int | Returns address inside the postaladdress key, that is specifically formatted for each country. Currently supported for addresses in Germany. Defaults to 0 [0,1]
 try {
-    val result : Location = apiInstance.reverse(lat, lon, format, normalizecity, addressdetails, acceptLanguage, namedetails, extratags, statecode)
+    val result : Location = apiInstance.reverse(lat, lon, format, normalizecity, addressdetails, acceptMinusLanguage, namedetails, extratags, statecode, showdistance, postaladdress)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ReverseApi#reverse")
@@ -52,10 +54,12 @@ Name | Type | Description  | Notes
  **format** | **kotlin.String**| Format to geocode. Only JSON supported for SDKs | [enum: json]
  **normalizecity** | **kotlin.Int**| Normalizes village to city level data to city | [enum: 1]
  **addressdetails** | **kotlin.Int**| Include a breakdown of the address into elements. Defaults to 1. | [optional] [default to 1] [enum: 0, 1]
- **acceptLanguage** | **kotlin.String**| Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language&#x3D;native | [optional]
+ **acceptMinusLanguage** | **kotlin.String**| Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language&#x3D;native | [optional]
  **namedetails** | **kotlin.Int**| Include a list of alternative names in the results. These may include language variants, references, operator and brand. | [optional] [enum: 0, 1]
  **extratags** | **kotlin.Int**| Include additional information in the result if available, e.g. wikipedia link, opening hours. | [optional] [enum: 0, 1]
  **statecode** | **kotlin.Int**| Adds state or province code when available to the statecode key inside the address element. Currently supported for addresses in the USA, Canada and Australia. Defaults to 0 | [optional] [enum: 0, 1]
+ **showdistance** | **kotlin.Int**| Returns the straight line distance (meters) between the input location and the result&#39;s location. Value is set in the distance key of the response. Defaults to 0 [0,1] | [optional]
+ **postaladdress** | **kotlin.Int**| Returns address inside the postaladdress key, that is specifically formatted for each country. Currently supported for addresses in Germany. Defaults to 0 [0,1] | [optional]
 
 ### Return type
 
@@ -63,7 +67,10 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[key](../README.md#key)
+
+Configure key:
+    ApiClient.apiKey["key"] = ""
+    ApiClient.apiKeyPrefix["key"] = ""
 
 ### HTTP request headers
 
